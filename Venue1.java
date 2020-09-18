@@ -1,17 +1,12 @@
-package com.code2;
+package com.code5;
 
 public class Venue {
 	String name;
 	String city;
-	public venue (String name,String city)
-	{
-		super();
-		this.name=name;
-		this.city=city;
-	}
 	public String getName()
 	{
 		return name;
+		
 	}
 	public void setName(String name)
 	{
@@ -23,8 +18,9 @@ public class Venue {
 	}
 	public void setCity(String city)
 	{
-	this.city=city;	
+		this.city=city;
 	}
 	
 
 }
+			
