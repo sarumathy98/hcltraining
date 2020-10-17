@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+<bean name="address" class="org.hcl.Address">
+		<property name="line1" value="5 Velmurugan nagar"></property>
+		<property name="line2" value="Saram"></property>
+		<property name="city" value="Puducherry"></property>
+		<property name="pinCode" value="605005"></property>
+	</bean>
+	<bean name="emp" class="org.hcl.Employee">
+		<property name="empName" value="Suresh"></property>
+		<property name="empEmail" value="Suresh98@gmail.com"></property>
+		<property name="empSalary" value="15000"></property>
+		<property name="empNumber" value="9898767654">
+	
+		</property>
+		<property name="address" ref="address"></property>
+	</bean>
+</beans>
